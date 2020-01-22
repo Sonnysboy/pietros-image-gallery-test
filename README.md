@@ -1,5 +1,6 @@
 # Pietro's Image Gallery
 A self-contained server and webpage to allow the user to upload and host static image files.
+[![Run on Repl.it](https://repl.it/badge/github/Sonnysboy/pietros-image-gallery)](https://repl.it/github/Sonnysboy/pietros-image-gallery)
 
 ![Demo GIF](http://pietro.adnan-chowdhury.com/uploads/1421529837299pietro.gif)
 
