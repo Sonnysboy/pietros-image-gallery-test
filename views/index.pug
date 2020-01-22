@@ -4,15 +4,15 @@ block content
   .header
     .header-logo
 
-      img.img-circle(src='img/retrato.jpg')
+      // img.img-circle(src='img/retrato.jpg')
       br
       .header-quote
-        i "Upload yer shite!"
-        |  - 
-        a(href='https://en.wikipedia.org/wiki/Pietro_Perugino')= 'Pietro Perugino'
+        // i "Upload yer shite!"
+        // |  - 
+        // a(href='https://en.wikipedia.org/wiki/Pietro_Perugino')= 'Pietro Perugino'
 
     .header-headline
-      | Pietro's Image Gallery
+      // | Pietro's Image Gallery
 
   .main
     .container
@@ -23,12 +23,12 @@ block content
                 .upload-preview
                 input#file-input(type='file' name='file')
                 button#submit-button.btn.btn-primary(type='submit')
+                  |
                   .upload-facade
                     |Upload
                   .success-facade
                     |Success!
                   .failure-facade
                     |Failed 
-                  .loading-spokes
-                    img(src='components/loading/loading-spokes.svg')
+
                 input#file-url(type='text' readonly)

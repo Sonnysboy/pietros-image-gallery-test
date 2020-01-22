@@ -12,7 +12,7 @@ var routes = require('./routes/index');
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(logger('dev'));
@@ -30,15 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(function (req, res, next) {
-  var user = auth(req);
-  if (!user || user.name !== config.username || user.pass !== config.password) {
-    res.writeHead(401, {
-      'WWW-Authenticate': 'Basic realm="Pietro requires authentication"'
-    });
-    res.end();
-  } else {
+  
     next();
-  }
+
 });
 
 app.use('/', routes);

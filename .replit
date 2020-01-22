@@ -1,2 +1,2 @@
-language = "nodejs"
-run = ""
+language = "express"
+run = "node ./index.js"
